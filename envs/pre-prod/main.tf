@@ -21,6 +21,6 @@ module Network {
   vpc_cidr_block = var.vpc_cidr_block
   azs   = module.Network.availability_zones
   subnet_ids = module.Network.public_subnets
-vpc
+# vpc
   
 }
