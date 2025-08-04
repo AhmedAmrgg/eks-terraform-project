@@ -9,8 +9,8 @@ module EKS {
   
 }
 
-module network {
-  source = "./modules/network"
+module Network {
+  source = "../../modules/Network"
 
   cidr = var.vpc_cidr_block
   azs = module.vpc.azs 
