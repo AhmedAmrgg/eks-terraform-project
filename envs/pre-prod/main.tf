@@ -9,8 +9,8 @@ module EKS {
   
 }
  
-  module "vpc" {
-  source = "../../modules/vpc"
+  module "Network" {
+  source = "../../modules/Network"
   # تمرر له ما يحتاجه
   azs = var.azs
   # أي متغيرات أخرى...
