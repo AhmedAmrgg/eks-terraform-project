@@ -5,7 +5,7 @@ module EKS {
   environment = var.environment
   cluster_name = var.cluster_name
   aws_region = var.aws_region
-  subnet_ids   = module.vpc.public_subnets  # ✅ الحل هنا
+  subnet_ids   = module.Network.public_subnets  # ✅ الحل هنا
 
   
 }
@@ -18,8 +18,8 @@ module Network {
 
   azs = var.azs
   vpc_cidr_block = var.vpc_cidr_block
-  vpc_azs   = module.vpc.azs
-  subnet_ids = module.vpc.public_subnets
+  vpc_azs   = module.Network.azs
+  subnet_ids = module.Network.public_subnets
 
   
 }
