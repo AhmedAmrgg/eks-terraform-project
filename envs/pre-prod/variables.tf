@@ -139,7 +139,8 @@ variable "vpc_single_nat_gateway" {
 # }
 
 variable "subnet_ids" {
-  type = list(string)
+  description = "List of subnet IDs"
+  type        = list(string)
 }
 
 
