@@ -2,18 +2,18 @@
 module EKS {
   source = "../../modules/EKS"
  
-  env = var.environment
-  name = var.cluster_name
-  region = var.aws_region
-  Subnets = var.vpc_public_subnets
+  environment = var.environment
+  cluster_name = var.cluster_name
+  aws_region = var.aws_region
+  vpc_public_subnets = var.vpc_public_subnets
   
 }
 
 module Network {
   source = "../../modules/Network"
 
-  cidr = var.vpc_cidr_block
-  azs = module.vpc.azs 
+  vpc_cidr_block = var.vpc_cidr_block
+  vpc.azs  = module.vpc.azs 
 
   
 }
