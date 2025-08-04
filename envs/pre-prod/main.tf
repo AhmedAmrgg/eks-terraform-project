@@ -5,7 +5,8 @@ module EKS {
   environment = var.environment
   cluster_name = var.cluster_name
   aws_region = var.aws_region
-  
+  subnet_ids   = module.vpc.public_subnets  # ✅ الحل هنا
+
   
 }
  
