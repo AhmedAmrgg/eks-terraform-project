@@ -19,7 +19,7 @@ module Network {
 
   # azs = var.azs
   vpc_cidr_block = var.vpc_cidr_block
-  azs   = module.Network.availability_zones
+  vpc_availability_zones = module.Network.availability_zones
   subnet_ids = module.Network.public_subnets
 # vpc
   
