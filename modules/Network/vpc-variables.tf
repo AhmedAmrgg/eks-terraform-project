@@ -72,6 +72,10 @@ variable "vpc_single_nat_gateway" {
   type = bool
   default = true
 }
+ variable "vpc_azs" {
+  description = "List of VPC availability zones"
+  type        = list(string)
+}
 
 
 
