@@ -72,7 +72,7 @@ variable "vpc_single_nat_gateway" {
   type = bool
   default = true
 }
- variable "vpc_azs" {
+ variable "azs" {
   description = "List of VPC availability zones"
   type        = list(string)
 }
@@ -82,6 +82,10 @@ variable "vpc_single_nat_gateway" {
   default = "eksdemo"
 }
 
+variable "subnet_ids" {
+  description = "List of subnet IDs"
+  type        = list(string)
+}
 
 
 
