@@ -134,9 +134,9 @@ variable "vpc_single_nat_gateway" {
   default = true
 }
 
- variable "azs" {
-  type = list(string)
-}
+#  variable "azs" {
+#   type = list(string)
+# }
 
 variable "subnet_ids" {
   type = list(string)
