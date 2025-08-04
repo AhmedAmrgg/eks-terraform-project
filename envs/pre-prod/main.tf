@@ -17,10 +17,10 @@ module Network {
   source = "../../modules/Network"
 
 
-  azs = var.azs
+  # azs = var.azs
   vpc_cidr_block = var.vpc_cidr_block
-  vpc_azs   = module.Network.azs
+  azs   = module.Network.azs
   subnet_ids = module.Network.public_subnets
-
+# vpc_
   
 }
