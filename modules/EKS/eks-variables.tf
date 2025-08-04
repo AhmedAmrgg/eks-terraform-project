@@ -36,3 +36,6 @@ variable "cluster_endpoint_public_access_cidrs" {
 
 # EKS Node Group Variables
 ## Placeholder space you can create if required
+  variable "subnet_ids" {
+  type = list(string)
+}

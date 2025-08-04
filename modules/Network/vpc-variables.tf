@@ -77,6 +77,11 @@ variable "vpc_single_nat_gateway" {
   type        = list(string)
 }
 
+ variable "cluster_name" {
+  type    = string
+  default = "eksdemo"
+}
+
 
 
 

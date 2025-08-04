@@ -8,13 +8,21 @@ module EKS {
   
   
 }
+ 
+  module "vpc" {
+  source = "../../modules/vpc"
+  # تمرر له ما يحتاجه
+  azs = var.azs
+  # أي متغيرات أخرى...
+} 
+
 
 module Network {
   source = "../../modules/Network"
 
   vpc_cidr_block = var.vpc_cidr_block
   vpc_azs   = module.vpc.azs
-  vpc_public_subnets = var.vpc_public_subnets
+  subnet_ids = module.vpc.public_subnets
 
   
 }
