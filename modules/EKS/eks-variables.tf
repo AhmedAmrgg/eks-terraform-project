@@ -39,3 +39,11 @@ variable "cluster_endpoint_public_access_cidrs" {
   variable "subnet_ids" {
   type = list(string)
 }
+
+ variable "private_subnets" {
+  type = list(string)
+}
+
+variable "public_subnets" {
+  type = list(string)
+}
