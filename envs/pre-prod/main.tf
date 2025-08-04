@@ -13,7 +13,7 @@ module Network {
   source = "../../modules/Network"
 
   vpc_cidr_block = var.vpc_cidr_block
-  vpc.azs  = module.vpc.azs 
+  vpc_azs  = module.vpc.azs 
 
   
 }
